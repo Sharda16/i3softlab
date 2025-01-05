@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% comment %} {% block title %}Data Engineering - I3SOFTLAB{% endblock %} {% endcomment %}
+{% block content %}
+<head>
+    <link rel="stylesheet" href="{% static 'css/all_services.css' %}">
+</head>
+<div class="data-container">
+
+</div>
+
+{% comment %} Footer {% endcomment %}
+<div id="site-footer" class="site-footer" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+    {% include 'footer.html' %}
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+{% endblock %}

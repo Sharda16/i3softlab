@@ -1,0 +1,112 @@
+/* Common css apply for all services */
+.navbar a {
+    color: black;   
+}
+.navbar{
+    background-color: rgb(250, 250, 250);
+}
+.data-container {
+    font-family: 'Georgia', serif;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 75%;
+    text-align: left;
+    margin-top: 150px;
+}
+
+/* Data Science Section  */
+.data-engg-section {
+    padding-top: 100px;
+}
+.all-insights {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgb(79, 77, 77);
+    cursor: pointer;
+}
+
+.all-insights:hover {
+    color: rgb(113, 112, 112);
+}
+.what-we-do-heading{
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.what-we-do {
+    margin-top: 20px;
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    color: rgb(50, 50, 50);
+    line-height: 1.6;
+}
+
+.services-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 5px 0;
+}
+
+.service-box {
+    background: #f8f9fa;
+    width: 32%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    /* border-radius: 8px; */
+    transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
+    transform: scale(1); /* Initial scale */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    text-align: center;
+}
+
+.service-box:hover {
+    transform: scale(0.98); /* Slightly shrink the box to simulate pressing */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Darker shadow for depth */
+    background-color: rgb(64, 103, 194);
+    cursor: pointer;
+}
+  .service-box:hover .service-title,
+  .service-box:hover .service-description {
+    color: white; /* Change color to white when hovering over the box */
+    cursor: pointer;
+  }
+.service-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(79, 77, 77);
+    margin-bottom: 10px;
+}
+
+.service-description {
+    font-size: 15px;
+    color: rgb(100, 100, 100);
+    /* text-align: center; */
+    text-align: justify; 
+    word-spacing: -2px; /* Adjust the value to reduce space between words */
+    letter-spacing: normal;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+/* Gen AI Section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+.site-footer{
+    margin-top: 100px;
+}

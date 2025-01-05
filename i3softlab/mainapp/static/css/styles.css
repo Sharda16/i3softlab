@@ -1,0 +1,543 @@
+html {
+    scroll-behavior: smooth;
+    /* background-color: #f4f4f4; */
+  }
+/* General Body Styling */
+body {
+    font-family: 'Georgia', serif;
+    /* background-color: #f8f9fa; */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+body, html {
+    height: 100%;
+  }
+  
+/* Hero-home Section */
+.hero {
+    background-image: url('../images/hero-section1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Adjust the height as needed */
+    max-width: 100%;
+    /* display: none; */
+    justify-content: flex-start;  /* Align text to the right */
+    align-items: center;  /* Vertically center the text */
+    padding-right: 50px;
+    padding-left: 50px;  /* Add padding to avoid text touching the edges */
+    padding-top: 200px;
+}
+
+.hero-text {
+    color: white;
+    text-align: left;  /* Align text to the right */
+    margin-left: 70px;
+    max-width: 50%;  /* Limit text width */    
+}
+
+.highlight {
+    font-weight: bolder;
+    font-size: 3.7em;  /* Adjust the font size for the bold text */
+}
+
+.hero-sub-text {
+    font-size: 1.2em;  /* Adjust the font size for the sub-text */
+    color: rgb(223, 220, 220);
+    max-width: 100%;
+    line-height: 1.5em;  /* Improve line spacing for readability */
+}
+/* Read More */
+.read-more{
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;  /* Remove margin */
+    padding: 0; /* Remove padding */
+    cursor: pointer;  /* Optional: Changes the cursor to indicate it's clickable */
+    text-decoration: none;
+    color: white;
+}
+.read-more-dash{
+    width: 9%;
+    height: 2px;
+    background-color: orange;
+    margin: 0;  /* Remove margin */
+    padding: 0; /* Remove padding */
+    transition: width 0.3s ease; /* Smooth transition when width changes */
+}
+/* Hover Effect */
+.read-more:hover + .read-more-dash {
+    width: 10.5%;  /* Increase width to 20% when hovering over .read-more */
+}
+
+/* home list ul li */
+.home-list {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    font-weight: bold;
+    list-style: none;
+    padding: 0;
+    /* margin: 0; */
+    /* margin-left: -450px; */
+    color:white;
+    /* margin-top: 530px;   */
+    padding-top: 100px;
+    justify-content: center;
+    position: relative;
+}
+
+.list-item{
+    margin-right: 130px;
+    text-align: center;
+    position: relative;
+    /* margin: 0; */
+    padding: 0;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth animation */
+    /* opacity: 0.5; Default lower opacity */
+}
+.list-item.active-text {
+    font-weight: bold;
+    color: white; /* Or any other color you want for the active item */
+
+}
+
+.item-dash {
+    width: 0%;
+    height: 2px;
+    background-color: rgb(42, 139, 156);
+    margin: 10px auto 0;
+    transition: width 5s ease, opacity 0.5s ease;  /* Smooth transition for both width and opacity */
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+}
+/* Animation for the dash */
+.item-dash.active {
+    width: 100%;  /* The dash expands fully */
+    opacity: 1;   /* The dash becomes visible */
+    /* animation: dashFadeIn 5s forwards;   */
+
+}
+
+.item-dash.inactive {
+    width: 0%;
+    opacity: 0;   /* The dash fades out */
+    transition: opacity 1s ease; /* Ensure fade out happens smoothly */
+
+}
+
+  /* Navbar Styling */
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Default Navbar Styles */
+  .navbar {
+    background-color: transparent; /* Start with transparent background */
+    /* color: white; */
+    /* font-family: Arial, sans-serif; */
+    font-family: 'Georgia', serif;
+
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  /* Navbar hover effect */
+  .navbar:hover {
+    background-color: white;
+    box-shadow: 4px 4px 4px rgba(117, 115, 115, 0.1);
+
+  }
+  
+  .navbar:hover a {
+    color: black;
+  }
+  
+  /* Hover Line under Nav Link */
+  .navbar a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: orange;
+    transition: width 0.3s ease;
+  }
+  
+  .navbar a:hover::after {
+    width: 100%;
+  }
+  
+  /* Optional: Adjust the layout of the navbar items */
+  .navbar a {
+    display: inline-block;
+    padding: 10px;
+    /* text-transform: uppercase; */
+    /* font-size: 17px; */
+  }
+  
+
+/* Responsive Dropdown */
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+/* service icon */
+/* .bi-chevron-down {
+    color: orange; 
+} */
+/* Rotate the icon when the dropdown is hovered */
+.nav-item.dropdown:hover .bi-chevron-down {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+
+/* Ensure dropdown menu shows on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* About Us */
+.about-us-container{
+    margin-top: 500px;
+    /* text-align: center; */
+}
+h2{
+    margin-top: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Transperant Image in Background */
+.parallax-transperant-bg-image{
+    position: relative;
+    background-image: url('../images/imgai.jpg');
+    /* Full height */
+    height: 100%; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity:0.4; */
+  }
+
+.parallax-transperant-bg-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Applying the transparency effect */
+    z-index: 1;
+}
+
+/* Content inside the parallax container */
+.parallax-transperant-bg-image .key_benefits {
+    position: relative;
+    z-index: 2; /* Ensures content is above the background */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Contact US */
+.btn-orange {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-orange:hover {
+    background-color: #cc5200;
+  }
+
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        text-align: center;
+        margin: 5px 0;
+        
+    }
+}
+
+/* our IT Solutions */
+/* Featured Work ---------------------------*/
+/* Main Section Styles */
+.main-section {
+    padding: 80px 0;
+}
+
+.main-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Alabaster Section */
+.main-section.alabaster {
+    background-color: #f4f4f4;
+}
+
+.featured-work {
+    padding-left: 20px;
+}
+
+.featured-work h2 {
+    font-size: 32px;
+    /* font-weight: bold; */
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
+}
+
+.featured-work p.padding-b {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+/* Featured Boxes */
+.featured-box {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.featured-box-col1 {
+    flex: 1;
+    font-size: 40px;
+    color: #ff6347; /* Tomato color for icons */
+    text-align: center;
+}
+
+.featured-box-col2 {
+    flex: 3;
+    padding-left: 20px;
+}
+
+.featured-box-col2 h3 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.featured-box-col2 p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.Learn-More {
+    display: inline-block;
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.Learn-More:hover {
+    background-color: #e5533f;
+}
+
+/* Image Styling */
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Wow Animation Classes */
+.wow {
+    visibility: hidden;
+}
+
+.wow.fadeInLeft {
+    animation: fadeInLeft 1s forwards;
+}
+
+.wow.fadeInRight {
+    animation: fadeInRight 1s forwards;
+}
+
+.wow.delay-02s {
+    animation-delay: 0.2s;
+}
+
+.wow.delay-04s {
+    animation-delay: 0.4s;
+}
+
+.wow.delay-06s {
+    animation-delay: 0.6s;
+}
+
+/* Keyframe Animations */
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .main-section .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    .featured-work {
+        padding-left: 0;
+    }
+
+    .featured-box {
+        flex-direction: column;
+    }
+
+    .featured-box-col1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .featured-box-col2 h3 {
+        font-size: 20px;
+    }
+
+    .featured-box-col2 p {
+        font-size: 14px;
+    }
+
+    .col-lg-5, .col-lg-7 {
+        width: 100%;
+    }
+
+    figure img {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .featured-work h2 {
+        font-size: 28px;
+    }
+
+    .featured-box-col1 {
+        font-size: 28px;
+    }
+
+    .featured-box-col2 h3 {
+        font-size: 18px;
+    }
+
+    .featured-box-col2 p {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Cards and Content */
+.card {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border: none;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .hero {
+        padding: 60px 10px;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+    }
+}

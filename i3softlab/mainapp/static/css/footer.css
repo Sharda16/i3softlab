@@ -1,0 +1,92 @@
+ /* Footer Styles */
+ .footer-section {
+    background-color: lightgray; /* Dark background color */
+    color: black; /* Light text color */
+    padding: 50px 0;
+    margin-top: 50px;
+  }
+
+  .footer-title {
+    color:black; /* White text */
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    position: relative;
+  }
+
+  .footer-title::after {
+    content: '';
+    width: 40px;
+    height: 2px;
+    background-color: #6c5ce7; /* Accent purple color */
+    display: block;
+    margin-top: 5px;
+  }
+
+  .footer-description {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: black; /* Slightly lighter text */
+  }
+
+  .social-icons a {
+    color: #6c5ce7; /* Purple icon color */
+    margin-right: 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+    text-decoration: none;
+  }
+
+  .social-icons a:hover {
+    color: #ffffff;
+  }
+
+  .news-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .news-item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 15px;
+  }
+
+  .news-title {
+    font-size: 0.9rem;
+    color: black;
+  }
+
+  .news-title:hover {
+    color: #6c5ce7; /* Purple on hover */
+    text-decoration: none;
+  }
+
+  .news-meta {
+    font-size: 0.8rem;
+    color: black;
+  }
+
+  .footer-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+  }
+
+  .footer-links a:hover {
+    color: #6c5ce7; /* Purple on hover */
+  }
+
+  .copyright {
+    text-align: center;
+    margin-top: 30px;
+    color: black;
+    font-size: 0.9rem;
+    border-top: 1px solid #2a2a3c;
+    padding-top: 20px;
+    /* justify-content: center; */
+  }

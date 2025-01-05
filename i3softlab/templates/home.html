@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home - I3SOFTLAB{% endblock %}
+{% block content %}
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<div class="hero">
+    <div class="hero-text">
+        <p class="highlight"> Data Science and <br>Advanced Analytics </p>
+        <p class="hero-sub-text">Leverage our advanced analytics and data science expertise to uncover<br>
+                                 actionable insights, predictive models, and data-driven strategies that <br>
+                                 drive business growth and innovation.</p>
+        <p class="read-more"><a href="{% url 'data_science_services' %}" class="read-more">Read more</a></p>
+        <p class = "read-more-dash"></p>
+    </div>
+
+    <div class="hero-text">
+        <p class="highlight"> Generative AI </p>
+        <p class="hero-sub-text">Harness the power of generative AI to innovate and automate processes,<br>
+                                creating personalized experiences,optimizing operations, and driving<br>
+                                transformative business outcomes. </p>
+        <p class="read-more"><a href="{% url 'gen_ai_serivces' %}" class="read-more">Read more</a></p>
+        <p class = "read-more-dash"></p>
+    </div>
+
+    <div class="hero-text">
+        <p class="highlight"> Data Visualization </p>
+        <p class="hero-sub-text">Transform complex data into intuitive, interactive visualizations that enhance<br>
+                                 understanding and communication, empowering stakeholders to make informed decisions swiftly</p>
+        <p class="read-more"><a href="{% url 'data_visu_services' %}" class="read-more">Read more</a></p>
+        <p class = "read-more-dash"></p>
+    </div>
+
+    <div class="hero-text">
+        <p class="highlight"> Data Engineering </p>
+        <p class="hero-sub-text">We provide robust data engineering solutions to streamline data integration,<br>
+                                processing, and storage,ensuring seamless data flow and accessibility for <br>
+                                informed decision-making<br></p>
+        <p class="read-more"><a href="{% url 'data_engg_services' %}" class="read-more">Read more</a></p>
+        <p class = "read-more-dash"></p>
+    </div>
+
+    <div>
+        <ul class="home-list">
+            <li class="list-item">Data Science & Advanced Analytics <div class="item-dash"></div></li>
+            <li class="list-item">Generative AI <div class="item-dash"></div></li>
+            <li class="list-item">Data Visualization <div class="item-dash"></div></li>
+            <li class="list-item">Data Engineering <div class="item-dash"></div></li>
+        </ul>
+    </div>
+</div>
+
+<!-- Link to scrollable sections -->
+ <!-- Link to scrollable sections -->
+<div id="about_us" class="about_us" data-aos="fade-up" data-aos-duration="" data-aos-delay="">
+    {% include 'about_us.html' %}
+</div>
+
+<div class="parallax-transperant-bg-image">
+     <!-- Background container with opacity -->
+    <div class="background-overlay"></div>
+
+    <div id="key_benefits" class="key_benefits" data-aos="fade-up" data-aos-duration="" data-aos-delay="">
+        {% include 'key_benefits.html' %}
+    </div>
+</div>
+
+<div id="our_it_solutions" class="our_it_solutions" data-aos="fade-up" data-aos-duration="">
+    {% include 'our_it_solutions.html' %}
+</div>
+
+<div id="case_studies" class="case_studies" data-aos="fade-up" data-aos-duration="" data-aos-delay="">
+    {% include 'case_studies.html' %}
+</div>
+
+<div id="site-footer" class="site-footer" data-aos="fade-up" data-aos-duration="" data-aos-delay="">
+    {% include 'footer.html' %}
+</div>
+
+
+<!-- AOS Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+<script src="{% static 'js/home.js' %}"></script>
+{% endblock %}

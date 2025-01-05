@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Data Engineering - I3SOFTLAB{% endblock %}
+{% block content %}
+<head>
+    <link rel="stylesheet" href="{% static 'css/all_services.css' %}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" rel="stylesheet">
+</head>
+<div class="data-container">
+    <div class="data-engg-section">
+        <p class="all-insights"> <i class="bi bi-chevron-left"></i> All Insights </p>
+    </div>
+    <div class="what-we-do-heading">
+        <p class="what-we-do-text"> What we do </p>
+    </div>
+
+    <div class="what-we-do">
+        <p>We specialize in providing cutting-edge data engineering services to help businesses unlock the full potential of their data. We are dedicated to designing, building, and maintaining robust high-performance infrastructure to help you make better decisions and achieve your business goals.</p>
+    </div>
+
+    <div class="services-row">
+        <div class="service-box">
+            <p class="service-title">Data Infrastructure Design</p>
+            <p class="service-description">Design and build scalable, secure data
+                infrastructures customized for your
+                business needs. This includes
+                establishing data pipelines, lakes, and
+                warehouses for efficient data storage,
+                processing, and retrieval.</p>
+        </div>
+        <div class="service-box">
+            <p class="service-title">ETL and Data Integration</p>
+            <p class="service-description">Develops and manages ETL processes for
+                ensuring clean, consistent, and
+                analysis-ready data. We integrate data
+                from databases, cloud services, and APIs
+                to create a unified, comprehensive data
+                ecosystem.</p>
+        </div>
+        <div class="service-box">
+            <p class="service-title">Data Quality and Governance</p>
+            <p class="service-description">We implement robust data quality and
+                governance frameworks to ensure the
+                accuracy, consistency, and reliability of
+                your data. This includes data validation,
+                cleansing, and monitoring processes to
+                maintain high data standards.</p>
+        </div>
+    </div>
+
+    <div class="services-row">
+        <div class="service-box">
+            <p class="service-title">Data Pipeline Automation</p>
+            <p class="service-description">We automate data pipelines to streamline
+                data workflows and reduce manual
+                intervention. This enhances efficiency,
+                minimizes errors, and ensures that your
+                data is always up-to-date and available for
+                analysis.</p>
+        </div>
+        <div class="service-box">
+            <p class="service-title">Big Data Solutions</p>
+            <p class="service-description">Our expertise in big data technologies
+                allows us to handle large volumes of data
+                and implement solutions that scale with
+                your business. We leverage platforms like
+                Hadoop, Spark, and Kafka to process and
+                analyze big data efficiently.</p>
+        </div>
+        <div class="service-box">
+            <p class="service-title">Cloud Data Engineering</p>
+            <p class="service-description">We migrate and manage your data
+                infrastructure on leading cloud platforms
+                like AWS, Google Cloud, and Azure,
+                ensuring scalability, security, and
+                cost-effectiveness.</p>
+        </div>
+    </div>
+</div>
+
+<div id="site-footer" class="site-footer" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+    {% include 'footer.html' %}
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+{% endblock %}
